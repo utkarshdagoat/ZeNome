@@ -1,8 +1,16 @@
+import { DataTable } from "@/components/ui/data-table";
+import { usePortfolioStore } from "@/stores/portfolio-store";
+import TableLoadingSkeleton from "@/components/portfolio/commons/table-loading-skeleton";
+
+import { TokenColumns } from "./token-columns";
 
 const Tokens = () => {
-  return (
-    <div>Tokens</div>
-  )
-}
+  const { assets, isLoading } = usePortfolioStore();
+  return isLoading ? (
+    <TableLoadingSkeleton />
+  ) : (
+    <DataTable columns={TokenColumns} data={assets} />
+  );
+};
 
-export default Tokens
+export default Tokens;
