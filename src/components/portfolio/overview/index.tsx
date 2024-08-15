@@ -1,18 +1,13 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
+import PortfolioOverview from "./portfolio-overview";
+import { AssetChart } from "./asset-chart";
 
 const Overview = () => {
   return (
-    <Card>
-        
-    </Card>
-  )
-}
+    <div className="flex flex-row gap-2 h-[18rem]">
+      <PortfolioOverview />
+      <AssetChart />
+    </div>
+  );
+};
 
-export default Overview
+export default Overview;

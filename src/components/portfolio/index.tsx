@@ -1,7 +1,10 @@
+import Overview from "./overview"
 
 const Portfolio = () => {
   return (
-    <div>Portfolio</div>
+    <>
+    <Overview />
+    </>
   )
 }
 
