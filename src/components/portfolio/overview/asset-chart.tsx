@@ -25,7 +25,7 @@ export function AssetChart() {
   // Ye dynamic hai, bahut maatha phoda hai iske liye
   const chartData = useMemo(() => {
     return assets.map((asset, index) => ({
-      name: `${asset.token} (${asset.chain})`,
+      name: `${asset.token}`,
       value: asset.balanceUSD,
       fill: `hsl(${229 - ((index * 25) % 50)}, ${80 + ((index * 20) % 100)}%, ${
         60 + ((index * 50) % 50)
@@ -44,17 +44,17 @@ export function AssetChart() {
         {isLoading ? (
           <AssetChartSkeleton />
         ) : (
-          <ChartContainer config={{}} className="mx-auto max-h-[16rem]">
+          <ChartContainer config={{}} className="mx-auto">
             <PieChart>
               <ChartTooltip
-                cursor={false}
+                cursor={true}
                 content={<ChartTooltipContent indicator="line" />}
               />
               <Pie
                 data={chartData}
                 dataKey="value"
                 nameKey="name"
-                innerRadius={68}
+                innerRadius={62}
                 strokeWidth={8}
               >
                 <Label
