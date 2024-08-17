@@ -1,6 +1,6 @@
 import { DataTable } from "@/components/ui/data-table";
 import { usePortfolioStore } from "@/stores/portfolio-store";
-import TableLoadingSkeleton from "@/components/portfolio/commons/table-loading-skeleton";
+import { TableLoadingSkeleton } from "@/components/portfolio/commons";
 
 import { TokenColumns } from "./token-columns";
 

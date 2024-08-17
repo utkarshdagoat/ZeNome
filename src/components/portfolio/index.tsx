@@ -1,7 +1,8 @@
-import Overview from "./overview";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
+import Overview from "./overview";
 import Tokens from "./tokens";
+import Transactions from "./transactions";
 
 const Portfolio = () => {
   return (
@@ -24,7 +25,7 @@ const Portfolio = () => {
           <Tokens />
         </TabsContent>
         <TabsContent value="transactions">
-          <div className="p-4">Transactions</div>
+          <Transactions />
         </TabsContent>
       </Tabs>
     </>

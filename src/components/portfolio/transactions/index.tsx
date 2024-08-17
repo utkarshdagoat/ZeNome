@@ -1,8 +1,16 @@
+import { usePortfolioStore } from "@/stores/portfolio-store";
+import Transaction from "./transaction";
 
 const Transactions = () => {
+  const { transactions, setTransactions } = usePortfolioStore();
+  // TODO: Do all the transaction fetching work here
   return (
-    <div>Transactions</div>
-  )
-}
+    <>
+      {transactions.map((transaction, index) => (
+        <Transaction key={index} {...transaction} />
+      ))}
+    </>
+  );
+};
 
-export default Transactions
+export default Transactions;

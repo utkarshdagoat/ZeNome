@@ -6,9 +6,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import PNLPercentage from "@/components/portfolio/commons/pnl-percentage";
+import { PNLPercentage, CopyAddress } from "@/components/portfolio/commons";
 import { formatToUSD } from "@/lib/utils";
-import CopyAddress from "@/components/portfolio/commons/copy-address";
 import { PortfolioOverviewSkeleton } from "./loading-skeletons";
 import { Badge } from "@/components/ui/badge";
 import { usePortfolioStore } from "@/stores/portfolio-store";
@@ -21,6 +20,8 @@ const PortfolioOverview = () => {
     0
   );
   const tokens = assets.map((asset) => asset.token);
+  
+  // TODO: Update it dynamically
   const [pnlPercentageChange, setPnlPercentageChange] = useState(0.08);
 
   return (
