@@ -5,7 +5,7 @@ export type UserAsset = {
   balanceUSD: number;
 };
 
-
+export type UserTransaction = UserTransactionBase<"receive" | "send">;
 type UserTransactionBase<T extends "receive" | "send"> = {
   type: T;
   txHash: string;
@@ -17,4 +17,15 @@ type UserTransactionBase<T extends "receive" | "send"> = {
   address: string;
 }
 
-export type UserTransaction = UserTransactionBase<"receive" | "send">;
+export type Route = {
+  metadata: {
+    gasPrice: number;
+    time: number;
+  };
+  path: {
+    amount: number;
+    amountInUSD: number;
+    token: string;
+    chain: string;
+  }[];
+};

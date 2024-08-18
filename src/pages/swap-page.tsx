@@ -1,9 +1,10 @@
+import Swap from "@/components/swap";
 import Layout from "@/components/utils/layout";
 
 const SwapPage = () => {
   return (
     <Layout>
-      <div>SwapPage</div>
+      <Swap />
     </Layout>
   );
 };

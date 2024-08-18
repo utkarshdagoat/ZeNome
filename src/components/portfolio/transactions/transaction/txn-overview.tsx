@@ -9,7 +9,7 @@ const TxnOverview = (props: UserTransaction) => {
   const txnColor =
     props.type === "receive"
       ? "text-teal-500 brightness-[112%]"
-      : "text-secondary brightness-[88%]";
+      : "text-yellow-500 brightness-[88%]";
   const txnSign = props.type === "receive" ? "+" : "-";
 
   return (

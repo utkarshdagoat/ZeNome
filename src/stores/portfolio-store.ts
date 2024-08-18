@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { type UserAsset, UserTransaction } from "@/lib/types";
+import { type UserAsset, type UserTransaction } from "@/lib/types";
 
 type PortfolioStoreState = {
   assets: UserAsset[];
@@ -60,7 +60,7 @@ export const usePortfolioStore = create<PortfolioStoreState>((set) => ({
       chain: "Ethereum",
       amount: 2.5,
       amountUSD: 4500,
-      address: "0x1234abcd5678efgh9012ijkl3456mnop7890qrst"
+      address: "0x1234abcd5678efgh9012ijkl3456mnop7890qrst",
     },
     {
       type: "send",
@@ -70,7 +70,7 @@ export const usePortfolioStore = create<PortfolioStoreState>((set) => ({
       chain: "Polygon",
       amount: 1000,
       amountUSD: 1000,
-      address: "0x7890qrst1234abcd5678efgh9012ijkl3456mnop"
+      address: "0x7890qrst1234abcd5678efgh9012ijkl3456mnop",
     },
     {
       type: "receive",
@@ -80,7 +80,7 @@ export const usePortfolioStore = create<PortfolioStoreState>((set) => ({
       chain: "Ethereum",
       amount: 500,
       amountUSD: 500,
-      address: "0x4567ijkl7890mnop1234qrst5678abcd9012efgh"
+      address: "0x4567ijkl7890mnop1234qrst5678abcd9012efgh",
     },
     {
       type: "send",
@@ -90,7 +90,7 @@ export const usePortfolioStore = create<PortfolioStoreState>((set) => ({
       chain: "Binance Smart Chain",
       amount: 1.2,
       amountUSD: 250,
-      address: "0x9012mnop3456qrst7890abcd1234efgh5678ijkl"
+      address: "0x9012mnop3456qrst7890abcd1234efgh5678ijkl",
     },
     {
       type: "receive",
@@ -100,7 +100,7 @@ export const usePortfolioStore = create<PortfolioStoreState>((set) => ({
       chain: "Polygon",
       amount: 150,
       amountUSD: 150,
-      address: "0x7890qrst1234abcd5678ijkl9012mnop3456efgh"
+      address: "0x7890qrst1234abcd5678ijkl9012mnop3456efgh",
     },
     {
       type: "send",
@@ -110,7 +110,7 @@ export const usePortfolioStore = create<PortfolioStoreState>((set) => ({
       chain: "Avalanche",
       amount: 10,
       amountUSD: 200,
-      address: "0x3456mnop7890qrst1234ijkl5678abcd9012efgh"
+      address: "0x3456mnop7890qrst1234ijkl5678abcd9012efgh",
     },
     {
       type: "receive",
@@ -120,7 +120,7 @@ export const usePortfolioStore = create<PortfolioStoreState>((set) => ({
       chain: "Solana",
       amount: 5,
       amountUSD: 125,
-      address: "0x9012ijkl3456mnop7890qrst5678abcd1234efgh"
+      address: "0x9012ijkl3456mnop7890qrst5678abcd1234efgh",
     },
     {
       type: "send",
@@ -130,7 +130,7 @@ export const usePortfolioStore = create<PortfolioStoreState>((set) => ({
       chain: "Polkadot",
       amount: 8,
       amountUSD: 160,
-      address: "0x5678mnop9012qrst1234ijkl3456abcd7890efgh"
+      address: "0x5678mnop9012qrst1234ijkl3456abcd7890efgh",
     },
     {
       type: "receive",
@@ -140,7 +140,7 @@ export const usePortfolioStore = create<PortfolioStoreState>((set) => ({
       chain: "Ethereum",
       amount: 20,
       amountUSD: 400,
-      address: "0x2345qrst7890ijkl1234mnop5678abcd9012efgh"
+      address: "0x2345qrst7890ijkl1234mnop5678abcd9012efgh",
     },
     {
       type: "send",
@@ -150,12 +150,12 @@ export const usePortfolioStore = create<PortfolioStoreState>((set) => ({
       chain: "Cardano",
       amount: 1000,
       amountUSD: 320,
-      address: "0x6789mnop3456ijkl9012qrst1234abcd7890efgh"
-    }
+      address: "0x6789mnop3456ijkl9012qrst1234abcd7890efgh",
+    },
   ],
   isLoading: false,
 
   setAssets: (assets) => set({ assets }),
   setIsLoading: (isLoading) => set({ isLoading }),
-  setTransactions: (transactions) => set({ transactions })
+  setTransactions: (transactions) => set({ transactions }),
 }));
