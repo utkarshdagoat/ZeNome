@@ -2,16 +2,16 @@
 <g clip-path="url(#clip0_105_6)">
 <rect width="1800" height="900" fill="#06070F"/>
 <rect x="-235" y="-253" width="2216" height="1270" fill="url(#pattern0_105_6)" fill-opacity="0.06"/>
-<rect width="1800" height="900" fill="url(#paint0_linear_105_6)" fill-opacity="0.5"/>
+<rect width="1800" height="900" fill="url(#paint0_radial_105_6)" fill-opacity="0.5"/>
 </g>
 <defs>
 <pattern id="pattern0_105_6" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_105_6" transform="matrix(0.000714286 0 0 0.00124634 0 -0.123172)"/>
 </pattern>
-<linearGradient id="paint0_linear_105_6" x1="1678.5" y1="55" x2="148.5" y2="844" gradientUnits="userSpaceOnUse">
-<stop offset="0.213552" stop-color="#212535" stop-opacity="0.4"/>
-<stop offset="1" stop-color="#1F2128" stop-opacity="0.4"/>
-</linearGradient>
+<radialGradient id="paint0_radial_105_6" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(913.5 449.5) rotate(90.9759) scale(792.615 673.268)">
+<stop offset="0.0191679" stop-color="#1F2128" stop-opacity="0"/>
+<stop offset="1" stop-color="#080809"/>
+</radialGradient>
 <clipPath id="clip0_105_6">
 <rect width="1800" height="900" fill="white"/>
 </clipPath>

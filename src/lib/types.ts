@@ -17,15 +17,7 @@ type UserTransactionBase<T extends "receive" | "send"> = {
   address: string;
 }
 
-export type Route = {
-  metadata: {
-    gasPrice: number;
-    time: number;
-  };
-  path: {
-    amount: number;
-    amountInUSD: number;
-    token: string;
-    chain: string;
-  }[];
+export type TokenBoxVariant = {
+  type: "from" | "to";
 };
+

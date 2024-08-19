@@ -17,11 +17,11 @@ const HomePage = () => {
       <h1 className="text-7xl uppercase font-black mb-4 bg-gradient-to-br text-transparent bg-clip-text from-primary-foreground from-[20%] to-accent/50 to-[200%]">Zenome</h1>
       <p className="text-lg font-medium text-secondary-foreground mb-8">
         The Nexus of{" "}
-        <span className="font-bold text-blue-500">
+        <span className="font-bold text-primary-foreground">
           Cross-Chain Trading
         </span>{" "}
         &{" "}
-        <span className="font-bold text-amber-500">
+        <span className="font-bold text-primary-foreground">
           Portfolio Mastery
         </span>
       </p>
